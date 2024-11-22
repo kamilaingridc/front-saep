@@ -1,0 +1,82 @@
+.containner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f4f7fa;
+}
+
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.teste {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.botao-cadastrar-container {
+  margin-top: 20px;
+}
+
+.botao-cadastrar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-cadastrar:hover {
+  background-color: #0056b3;
+}
+
+.mensagem-sucesso {
+  margin-top: 20px;
+}
+
+.mensagem-sucesso p {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.mensagem-sucesso p.error {
+  color: var(--primary-color);
+}

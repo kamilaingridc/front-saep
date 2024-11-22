@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s;
+}

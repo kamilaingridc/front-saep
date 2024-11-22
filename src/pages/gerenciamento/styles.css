@@ -1,0 +1,118 @@
+/* GerenciamentoDeTarefas - Container principal */
+.task-manager {
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Grid de colunas de tarefas */
+.task-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* Estilo para cada coluna de tarefa */
+.task-column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da coluna */
+.task-column h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Estilo para cada cartão de tarefa */
+.task-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.task-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-card p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+/* Botões de Ação */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+/* Botões de edição e exclusão */
+.update-button {
+  background-color: var(--primary-color);
+}
+
+.delete-button {
+  background-color:var(--primary-color);
+}
+
+/* Efeitos ao passar o mouse */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Contêiner de status e dropdown */
+.status-container {
+  margin-top: 15px;
+}
+
+.status-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.status-dropdown {
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Estilo do Select */
+.status-dropdown:focus {
+  outline: none;
+  border-color:var(--primary-color);
+}
+
+/* Alinhamento e responsividade */
+@media (max-width: 768px) {
+  .task-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .task-column {
+      margin-bottom: 20px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+
